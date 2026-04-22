@@ -2,22 +2,34 @@
 """
 Runs Nextclade alignment on clustered.fasta in every epoch folder.
 
-For each epoch:
+Uses --output-all to produce all Nextclade output files per epoch:
+  nextclade.aligned.fasta         — sequences aligned to epoch reference
+  nextclade.json                  — full per-sequence results (JSON)
+  nextclade.ndjson                — same, newline-delimited (streamable)
+  nextclade.tsv                   — mutations + QC (tab-separated)
+  nextclade.csv                   — same (comma-separated)
+  nextclade.gff                   — per-sequence GFF3 annotations
+  nextclade.tbl                   — feature table
+  nextclade.cds_translation.*.fasta — amino acid translations per CDS
+    (only in codon-aware mode, i.e. when --input-annotation is provided)
+
+Note on .nwk (Newick tree):
+  Nextclade tree output requires --input-tree, which must match the
+  reference sequence exactly. Since we use epoch-specific references
+  (not the dataset root), the dataset tree is incompatible and causes
+  a hard crash. Build Newick trees downstream from nextclade.aligned.fasta
+  using IQ-TREE or FastTree.
+
+Per-epoch strategy:
   - Uses the epoch's own reference.fasta as --input-ref
-  - Tries to use the downloaded dataset's genome_annotation.gff3 and
-    pathogen.json (codon-aware alignment + QC)
-  - Falls back to annotation-free mode if reference length differs too
-    much from the dataset reference (avoids Nextclade index-out-of-bounds
-    crash when GFF3 coordinates exceed the custom reference length)
+  - Tries codon-aware mode (with dataset annotation + pathogen.json)
+    when epoch reference length is within 50 bp of the dataset reference
+  - Falls back to basic mode (no annotation) otherwise
 
 The reference sequence is prepended to clustered.fasta so it appears
-first in aligned.fasta (standard anchor for downstream tools).
+first in nextclade.aligned.fasta.
 
-Output per epoch:
-  aligned.fasta   — sequences aligned to the epoch reference
-  nextclade.tsv   — per-sequence mutations + QC metrics
-
-Idempotent: skips epochs where aligned.fasta already exists.
+Idempotent: skips epochs where nextclade.aligned.fasta already exists.
 """
 
 import os
@@ -30,15 +42,11 @@ OUTPUT_DIR  = os.path.join(BASE_DIR, "split_output")
 DATASETS    = os.path.join(BASE_DIR, "nextclade_datasets")
 NEXTCLADE   = os.path.join(BASE_DIR, "nextclade")
 
-SUBTYPE_MAP = {"H1N1": "H1N1", "H3N2": "H3N2"}
-
-# Tolerated length difference (bp) between epoch ref and dataset ref.
-# Beyond this, skip the annotation to avoid coordinate crashes.
+SUBTYPE_MAP   = {"H1N1": "H1N1", "H3N2": "H3N2"}
 LEN_TOLERANCE = 50
 
 
 def seq_len(fasta_path: str) -> int:
-    """Return total nucleotide length of the first sequence in a FASTA."""
     length = 0
     with open(fasta_path) as f:
         for line in f:
@@ -55,7 +63,6 @@ def count_seqs(fasta_path: str) -> int:
 
 
 def run_nextclade(cmd: list) -> bool:
-    """Run nextclade; return True on success, False on any error."""
     try:
         subprocess.run(
             cmd,
@@ -99,10 +106,9 @@ for subtype in sorted(os.listdir(OUTPUT_DIR)):
             if not os.path.isdir(epoch_dir):
                 continue
 
-            clustered = os.path.join(epoch_dir, "clustered.fasta")
-            reference = os.path.join(epoch_dir, "reference.fasta")
-            aligned   = os.path.join(epoch_dir, "aligned.fasta")
-            tsv_out   = os.path.join(epoch_dir, "nextclade.tsv")
+            clustered  = os.path.join(epoch_dir, "clustered.fasta")
+            reference  = os.path.join(epoch_dir, "reference.fasta")
+            aligned_out = os.path.join(epoch_dir, "nextclade.aligned.fasta")
 
             if not os.path.exists(clustered):
                 continue
@@ -114,7 +120,7 @@ for subtype in sorted(os.listdir(OUTPUT_DIR)):
                 print(f"  [SKIP] {epoch}  — no reference.fasta")
                 continue
 
-            if os.path.exists(aligned):
+            if os.path.exists(aligned_out):
                 skipped += 1
                 print(f"  [--]   {epoch}  (already done)")
                 continue
@@ -122,7 +128,6 @@ for subtype in sorted(os.listdir(OUTPUT_DIR)):
             n_in = count_seqs(clustered)
             epoch_ref_len = seq_len(reference)
 
-            # Decide whether annotation is safe to use
             use_annotation = (
                 has_dataset
                 and ds_ref_len is not None
@@ -141,19 +146,16 @@ for subtype in sorted(os.listdir(OUTPUT_DIR)):
 
             base_cmd = [
                 NEXTCLADE, "run",
-                "--input-ref",    reference,
-                "--output-fasta", aligned,
-                "--output-tsv",   tsv_out,
+                "--input-ref",       reference,
+                "--output-all",      epoch_dir + "/",
+                "--output-basename", "nextclade",
             ]
 
-            if use_annotation:
-                anno_cmd = base_cmd + [
-                    "--input-annotation",    annotation,
-                    "--input-pathogen-json", pathogen_json,
-                    tmp_path,
-                ]
-            else:
-                anno_cmd = None
+            anno_cmd = base_cmd + [
+                "--input-annotation",    annotation,
+                "--input-pathogen-json", pathogen_json,
+                tmp_path,
+            ] if use_annotation else None
 
             no_anno_cmd = base_cmd + [tmp_path]
 
@@ -166,10 +168,10 @@ for subtype in sorted(os.listdir(OUTPUT_DIR)):
                 if ok:
                     mode = "codon-aware"
                 else:
-                    # Clean up partial output and retry without annotation
-                    for f in (aligned, tsv_out):
-                        if os.path.exists(f):
-                            os.remove(f)
+                    # Clean partial outputs and retry without annotation
+                    for fname in os.listdir(epoch_dir):
+                        if fname.startswith("nextclade."):
+                            os.remove(os.path.join(epoch_dir, fname))
 
             if not ok:
                 ok = run_nextclade(no_anno_cmd)
@@ -180,15 +182,15 @@ for subtype in sorted(os.listdir(OUTPUT_DIR)):
             if os.path.exists(tmp_path):
                 os.remove(tmp_path)
 
-            if ok and os.path.exists(aligned):
-                n_out = count_seqs(aligned)
+            if ok and os.path.exists(aligned_out):
+                n_out = count_seqs(aligned_out)
                 succeeded += 1
                 print(f"  [OK]   {epoch}  {n_in:,} → {n_out:,} seqs  [{mode}]  ({elapsed:.0f}s)")
             else:
                 failed += 1
-                for f in (aligned, tsv_out):
-                    if os.path.exists(f):
-                        os.remove(f)
+                for fname in os.listdir(epoch_dir):
+                    if fname.startswith("nextclade."):
+                        os.remove(os.path.join(epoch_dir, fname))
                 print(f"  [FAIL] {epoch}  ({elapsed:.0f}s)")
 
 print(f"\n{'='*65}")
