@@ -1,6 +1,8 @@
 # Raw GISAID data (not redistributable)
 H1N1/
 H3N2/
+H1N1_metadata/
+H3N2_metadata/
 
 # Derived data (too large, reproducible by running the scripts)
 split_output/
