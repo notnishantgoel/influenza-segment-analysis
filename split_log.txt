@@ -1,0 +1,247 @@
+=================================================================
+ Influenza Segment-Wise Data Splitter
+=================================================================
+
+=================================================================
+ H1N1  —  8 epochs
+=================================================================
+
+  [HA]
+    Total in file: 94,203
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               8 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                294 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                            1,639 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                              9,531 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                             12,406 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                           70,324 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [MP]
+    Total in file: 80,482
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               8 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                292 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                              956 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                              7,608 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                              9,578 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                           62,040 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [NA]
+    Total in file: 89,251
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               7 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                297 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                            1,452 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                              8,792 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                             10,921 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                           67,782 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [NP]
+    Total in file: 80,833
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               8 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                293 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                              484 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                              7,291 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                              9,553 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                           63,202 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [NS]
+    Total in file: 85,775
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               8 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                293 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                              816 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                              7,531 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                              9,895 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                           67,231 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [PA]
+    Total in file: 589
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               7 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                293 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                              105 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                                178 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                                  0 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                                6 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [PB1]
+    Total in file: 388
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               7 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                294 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                                0 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                                  1 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                                 17 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                               69 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+  [PB2]
+    Total in file: 76,841
+      1986_A_Singapore_6_1986                                  0 seqs  |  ref NOT FOUND for 'A/Singapore/6/1986'
+      1995_A_Beijing_262_95                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/262/95'
+      1999_A_New_Caledonia_20_99                               8 seqs  |  ref NOT FOUND for 'A/New Caledonia/20/99'
+      2007_A_Brisbane_59_2007                                293 seqs  |  ref NOT FOUND for 'A/Brisbane/59/2007'
+      2009_A_California_07_2009                              473 seqs  |  ref NOT FOUND for 'A/California/07/2009'
+      2015_A_Michigan_45_2015                              7,086 seqs  |  ref NOT FOUND for 'A/Michigan/45/2015'
+      2019_A_Brisbane_02_2018                              9,222 seqs  |  ref NOT FOUND for 'A/Brisbane/02/2018'
+      2022_A_Victoria_4897_2022                           59,758 seqs  |  ref NOT FOUND for 'A/Victoria/4897/2022'
+
+=================================================================
+ H3N2  —  15 epochs
+=================================================================
+
+  [HA]
+    Total in file: 122,736
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   1 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 4 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                18 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 75 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                   159 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               644 seqs  |  ref OK  (A/Victoria/361/2011)
+      2014_A_Hong_Kong_4801_2014                           5,510 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               21,536 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                29,868 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                              64,918 seqs  |  ref OK  (A/Thailand/8/2022)
+
+  [MP]
+    Total in file: 108,864
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   1 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 3 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                17 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 74 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                    99 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               285 seqs  |  ref NOT FOUND for 'A/Victoria/361/2011'
+      2014_A_Hong_Kong_4801_2014                           4,326 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               18,245 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                27,496 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                              58,318 seqs  |  ref OK  (A/Thailand/8/2022)
+
+  [NA]
+    Total in file: 116,703
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   0 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 4 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                18 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 75 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                   144 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               324 seqs  |  ref OK  (A/Victoria/361/2011)
+      2014_A_Hong_Kong_4801_2014                           4,576 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               20,328 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                28,908 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                              62,323 seqs  |  ref OK  (A/Thailand/8/2022)
+
+  [NP]
+    Total in file: 102,837
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   1 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 1 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                 5 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 73 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                    36 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               103 seqs  |  ref NOT FOUND for 'A/Victoria/361/2011'
+      2014_A_Hong_Kong_4801_2014                           2,994 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               11,859 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                27,219 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                              60,546 seqs  |  ref NOT FOUND for 'A/Thailand/8/2022'
+
+  [NS]
+    Total in file: 108,382
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   1 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 3 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                15 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 74 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                    31 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               198 seqs  |  ref NOT FOUND for 'A/Victoria/361/2011'
+      2014_A_Hong_Kong_4801_2014                           4,155 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               16,124 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                27,514 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                              60,264 seqs  |  ref NOT FOUND for 'A/Thailand/8/2022'
+
+  [PA]
+    Total in file: 1,308
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   0 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 2 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                16 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 72 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                    29 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                                82 seqs  |  ref NOT FOUND for 'A/Victoria/361/2011'
+      2014_A_Hong_Kong_4801_2014                           1,052 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                                    0 seqs  |  ref NOT FOUND for 'A/Singapore/2016'
+      2021_A_Darwin_9_2021                                     1 seqs  |  ref NOT FOUND for 'A/Darwin/9/2021'
+      2023_A_Thailand_8_2022                                  54 seqs  |  ref NOT FOUND for 'A/Thailand/8/2022'
+
+  [PB1]
+    Total in file: 45,907
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   0 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 3 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                16 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 74 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                    38 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               216 seqs  |  ref NOT FOUND for 'A/Victoria/361/2011'
+      2014_A_Hong_Kong_4801_2014                           3,966 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               17,550 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                21,657 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                               2,387 seqs  |  ref NOT FOUND for 'A/Thailand/8/2022'
+
+  [PB2]
+    Total in file: 105,235
+      1987_A_Sichuan_2_87                                      0 seqs  |  ref NOT FOUND for 'A/Sichuan/2/87'
+      1989_A_Beijing_353_89                                    0 seqs  |  ref NOT FOUND for 'A/Beijing/353/89'
+      1992_A_Beijing_32_1992                                   0 seqs  |  ref NOT FOUND for 'A/Beijing/32/1992'
+      1995_A_Wuhan_359_95                                      0 seqs  |  ref NOT FOUND for 'A/Wuhan/359/95'
+      1997_A_Sydney_5_97                                       0 seqs  |  ref NOT FOUND for 'A/Sydney/5/97'
+      2002_A_Fujian_411_2002                                   1 seqs  |  ref NOT FOUND for 'A/Fujian/411/2002'
+      2004_A_California_7_2004                                 3 seqs  |  ref NOT FOUND for 'A/California/7/2004'
+      2005_A_Wisconsin_67_2005                                17 seqs  |  ref NOT FOUND for 'A/Wisconsin/67/2005'
+      2007_A_Brisbane_10_2007                                 74 seqs  |  ref NOT FOUND for 'A/Brisbane/10/2007'
+      2009_A_Perth_16_2009                                    33 seqs  |  ref NOT FOUND for 'A/Perth/16/2009'
+      2011_A_Victoria_361_2011                               157 seqs  |  ref NOT FOUND for 'A/Victoria/361/2011'
+      2014_A_Hong_Kong_4801_2014                           3,913 seqs  |  ref NOT FOUND for 'A/Hong Kong/4801/2014'
+      2017_A_Singapore_2016                               17,786 seqs  |  ref OK  (A/Singapore/GP1388/2016)
+      2021_A_Darwin_9_2021                                26,001 seqs  |  ref OK  (A/Darwin/9/2021)
+      2023_A_Thailand_8_2022                              57,250 seqs  |  ref NOT FOUND for 'A/Thailand/8/2022'
+
+=================================================================
+ Done. Output in: /Users/nishant/Desktop/Segment wise Data/split_output
+=================================================================

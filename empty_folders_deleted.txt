@@ -1,0 +1,87 @@
+Empty Interval Folders — Deleted
+==================================================
+Total deleted: 62
+Reason: No GISAID sequences found for these time intervals in the downloaded dataset.
+
+
+[H1N1]
+  HA:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+  MP:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+  NA:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+  NP:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+  NS:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+  PA:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+    - 2019_A_Brisbane_02_2018
+  PB1:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+    - 2009_A_California_07_2009
+  PB2:
+    - 1986_A_Singapore_6_1986
+    - 1995_A_Beijing_262_95
+
+[H3N2]
+  HA:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+  MP:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+  NA:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+    - 2002_A_Fujian_411_2002
+  NP:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+  NS:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+  PA:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+    - 2002_A_Fujian_411_2002
+    - 2017_A_Singapore_2016
+  PB1:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
+    - 2002_A_Fujian_411_2002
+  PB2:
+    - 1987_A_Sichuan_2_87
+    - 1989_A_Beijing_353_89
+    - 1992_A_Beijing_32_1992
+    - 1995_A_Wuhan_359_95
+    - 1997_A_Sydney_5_97
